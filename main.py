@@ -20,8 +20,6 @@ def result():
         result = request.form
         word = result['word']
         meaning = result['meaning']
-        print(result)
-        print(word, meaning)
         DATABASE[word] = meaning
 
         try:
